@@ -3,11 +3,15 @@
 A modern space-themed, feature-rich implementation of the classic Tic Tac Toe game built with vanilla JavaScript, HTML, and CSS. 
 Play against another player or challenge an AI opponent with adjustable difficulty levels.
 
+Live preview: [Odin's Tic Tac Toe](https://arsenlenaslov.github.io/tic-tac-toe/).
+
+<img width="1837" height="892" alt="image" src="https://github.com/user-attachments/assets/efb23682-dac6-4e5a-bdcb-1b8cb23ee581" />
+
 ## Features
 
 ### Game Modes
-- **Two Players (PvP)** : Play locally against another person on the same device
-- **Play vs Computer (PvC)** : Challenge an AI opponent with three difficulty levels:
+https://arsenlenaslov.github.io/tic-tac-toe/- **Two Players (PvP)** : Play locally against another person on the same device
+- **Play vs Computer (PvC)** : Challenge an AI ohttps://arsenlenaslov.github.io/tic-tac-toe/pponent with three difficulty levels:
   - **Easy** : Random moves (unpredictable but beatable)
   - **Intermediate** : Smart move selection with 30% random moves (balanced challenge)
   - **Hard** : Minimax algorithm for optimal play (unbeatable)
