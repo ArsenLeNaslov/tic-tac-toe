@@ -124,7 +124,7 @@ Created by [ArsenLeNaslov](https://github.com/ArsenLeNaslov) for [The Odin Proje
 
 ## License
 
-Open source: feel free to fork, modify, and learn! 
-Favicon and GIFs fron [Flaticon](https://www.flaticon.com/), creative common license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-Background image from [Freepic](https://www.freepik.com/free-photo/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy_39616662.htm#fromView=keyword&page=2&position=49&uuid=2d41c603-82ba-4dd8-8955-edbb7d76d813&query=Cosmic+background), free for use under the website content license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-["ZenDots](https://www.cufonfonts.com/font/zen-dots) font is free to use under the [Open Font License](https://openfontlicense.org/)
+- Open source: feel free to fork, modify, and learn! 
+- Favicon and GIFs fron [Flaticon](https://www.flaticon.com/), creative common license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Background image from [Freepic](https://www.freepik.com/free-photo/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy_39616662.htm#fromView=keyword&page=2&position=49&uuid=2d41c603-82ba-4dd8-8955-edbb7d76d813&query=Cosmic+background), free for use under the website content license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- ["ZenDots](https://www.cufonfonts.com/font/zen-dots) font is free to use under the [Open Font License](https://openfontlicense.org/)
