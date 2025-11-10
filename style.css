@@ -1,3 +1,5 @@
+CSS
+
 /* Global Reset and Box Model */
 body {
     font-family: 'Zen Dots', system-ui, sans-serif;
@@ -16,7 +18,6 @@ body {
     background-blend-mode: overlay;
     color: #ffffff;
 }
-
 .game-container {
     background: rgba(255, 255, 255, 0.1);
     padding: 25px;
@@ -27,7 +28,6 @@ body {
     width: 100%;
     border: 1px solid rgba(99, 4, 78, 0.2);
 }
-
 h1 {
     color: #2c3e50;
     margin-bottom: 20px;
@@ -40,7 +40,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 /* Header with title icon */
 .game-header {
     display: flex;
@@ -50,14 +49,12 @@ h1 {
     margin-bottom: 6px;
     flex-wrap: nowrap;
 }
-
 .title-emoji {
     width: 3.8rem;
     height: 3.8rem;
     object-fit: contain;
     filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
 }
-
 @media (max-width: 600px) {
     .title-emoji {
         width: 3rem;
@@ -68,7 +65,6 @@ h1 {
         padding: 28px;
     }
 }
-
 /* Scoreboard - Game score and current turn display */
 .scoreboard {
     background: linear-gradient(135deg, rgba(16, 24, 52, 0.8) 0%, rgba(28, 42, 86, 0.8) 100%);
@@ -80,7 +76,6 @@ h1 {
     color: white;
     backdrop-filter: blur(10px);
 }
-
 .scores {
     display: flex;
     justify-content: space-around;
@@ -104,7 +99,6 @@ h1 {
     box-shadow: 0 0 20px rgba(88, 103, 221, 0.35);
     backdrop-filter: blur(6px);
 }
-
 /* Play Options - against another Player or the Computer */
 .play-options {
     font-size: 1.3rem;
@@ -117,7 +111,6 @@ h1 {
     box-shadow: 0 0 20px rgba(88, 103, 221, 0.2);
     backdrop-filter: blur(8px);
 }
-
 .play-options {
     display: flex;
     align-items: center;
@@ -127,20 +120,17 @@ h1 {
     margin-bottom: 20px;
     min-height: 40px;
 }
-
 .play-options label {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 1rem;
 }
-
 .play-options label img.emoji {
     width: 2.6em;
     height: 2.6em;
     margin: 0;
 }
-
 .play-options select {
     background: rgba(16, 24, 52, 0.6);
     color: #ffffff;
@@ -150,7 +140,6 @@ h1 {
     font-family: 'Zen Dots', system-ui, sans-serif;
     font-size: 0.9rem;
 }
-
 .play-options input[type="radio"] {
     accent-color: #8ab4ff;
 }
@@ -222,17 +211,14 @@ h1 {
     color: #8ab4ff;
     text-shadow: 0 0 12px rgba(138, 180, 255, 0.55);
 }
-
-.cell:hover {
+.celda:hover {
     background: linear-gradient(135deg, #ffffff 0%, #d5dbdb 100%);
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-.cell:active {
+.celda:active {
     transform: scale(0.95);
 }
-
 /* Enhanced Controls - Game buttons and interactive elements */
 .controls {
     display: flex;
@@ -241,7 +227,6 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
 }
-
 button {
     padding: 14px 24px;
     font-size: 0.9rem;
@@ -259,7 +244,6 @@ button {
     position: relative;
     overflow: hidden;
 }
-
 button::before {
     content: '';
     position: absolute;
@@ -270,60 +254,49 @@ button::before {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
 }
-
 button:hover::before {
     left: 100%;
 }
-
 button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(44, 62, 80, 0.4);
 }
-
 button:active {
     transform: translateY(-1px);
 }
-
 button#reset-scoreboard {
     background: linear-gradient(135deg, rgba(88, 103, 221, 0.9) 0%, rgba(40, 48, 122, 0.9) 100%);
     box-shadow: 0 0 20px rgba(138, 180, 255, 0.4);
     border: 1px solid rgba(138, 180, 255, 0.3);
 }
-
-button#reset-scoreboard:hover {
+button#reiniciar-marcador:hover {
     box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
 }
-
 /* Player Marks - Styling for X and O markers */
 .mark-x {
     color: #e74c3c;
     text-shadow: 2px 2px 4px rgba(231, 76, 60, 0.3);
-    animation: fadeIn 0.4s ease;
+    animation: aparecer 0.4s ease;
 }
-
 .mark-o {
     color: #3498db;
     text-shadow: 2px 2px 4px rgba(52, 152, 219, 0.3);
-    animation: fadeIn 0.4s ease;
+    animation: aparecer 0.4s ease;
 }
-
-@keyframes fadeIn {
+@keyframes aparecer {
     0% {
         transform: scale(0) rotate(-180deg);
         opacity: 0;
     }
-
     70% {
         transform: scale(1.1) rotate(10deg);
         opacity: 0.8;
     }
-
     100% {
         transform: scale(1) rotate(0deg);
         opacity: 1;
     }
 }
-
 /* Emoji Images - Styling for animated game status indicators */
 .emoji {
     width: 2.6em;
@@ -333,161 +306,132 @@ button#reset-scoreboard:hover {
     display: inline-block;
     object-fit: contain;
 }
-
 /* Make reset buttons slightly larger and more prominent */
 button#reset-game,
 button#reset-scoreboard {
     font-size: 1.05rem;
     padding: 16px 26px;
 }
-
 /* Victory Effect - Animation and styling for winning combinations */
 .winning-line {
     background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%) !important;
     color: white !important;
-    animation: celebration 0.6s ease infinite alternate;
+    animation: celebrar 0.6s ease infinite alternate;
     box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
 }
-
-@keyframes celebration {
+@keyframes celebrar {
     0% {
         transform: scale(1);
         box-shadow: 0 0 20px rgba(39, 174, 96, 0.5);
     }
-
     100% {
         transform: scale(1.05);
         box-shadow: 0 0 30px rgba(39, 174, 96, 0.8);
     }
 }
-
 /* Responsive Design - Small screens (mobile) */
 @media (max-width: 400px) {
     body {
         padding: 10px;
     }
-
-    .game-container {
+    .contenedor-juego {
         padding: 20px;
     }
-
     h1 {
         font-size: 1.9rem;
     }
-
-    .board {
+    .tablero {
         max-width: 280px;
         padding: 10px;
     }
-
-    .cell {
+    .celda {
         font-size: clamp(2rem, 10vw, 3.5rem);
         min-height: 60px;
     }
-
-    .controls {
+    .controles {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-
     button {
         width: 100%;
         max-width: 220px;
         min-width: auto;
     }
-
     /* Scale down emojis and reset buttons on small screens */
     .emoji {
         width: 1.6em;
         height: 1.6em;
     }
-
     button#reset-game,
     button#reset-scoreboard {
         font-size: 0.95rem;
         padding: 12px 18px;
     }
-
     /* Make current-turn smaller on very small screens to keep layout tidy */
     .current-turn {
         font-size: 1rem;
         padding: 8px 10px;
     }
-
-    .scoreboard {
+    .marcador {
         padding: 12px;
     }
-
-    .score {
+    .puntuacion {
         font-size: 1rem;
     }
 }
-
 /* Responsive Design - Short height screens */
 @media (max-height: 700px) {
-    .game-container {
+    .contenedor-juego {
         padding: 20px;
     }
-
     h1 {
         font-size: 1.8rem;
         margin-bottom: 15px;
     }
-
-    .scoreboard {
+    .marcador {
         margin-bottom: 15px;
         padding: 10px;
     }
-
-    .board {
+    .tablero {
         max-width: 260px;
         margin: 15px auto;
     }
-
-    .cell {
+    .celda {
         font-size: clamp(1.8rem, 8vw, 3rem);
         min-height: 55px;
     }
-
-    .game-message {
+    .mensaje-juego {
         margin: 15px 0;
         font-size: 1.1rem;
         min-height: 35px;
         padding: 10px;
     }
-
-    .controls {
+    .controles {
         margin-top: 20px;
     }
-
     button {
         padding: 12px 20px;
         font-size: 0.95rem;
     }
 }
-
 /* Responsive Design - Large screens (desktop) */
 @media (min-width: 1200px) {
-    .game-container {
+    .contenedor-juego {
         max-width: 460px;
         padding: 30px;
     }
-
-    .board {
+    .tablero {
         max-width: 340px;
     }
-
-    .cell {
+    .celda {
         font-size: clamp(2.5rem, 6vw, 4.2rem);
         min-height: 85px;
     }
-
     h1 {
         font-size: 2.5rem;
     }
 }
-
 /* Background Effects - Optional particle overlay effect */
 body::before {
     content: '';
@@ -503,7 +447,6 @@ body::before {
     pointer-events: none;
     z-index: -1;
 }
-
 /* Footer */
 footer {
   width: 100%;
@@ -512,7 +455,6 @@ footer {
   text-align: center;
   text-shadow: 4px 4px 20px darkblue;
 }
-
 footer a {
   text-decoration: none;
   background: linear-gradient(135deg, #8ab4ff 0%, #5867dd 100%);
@@ -521,7 +463,6 @@ footer a {
   background-clip: text;
   font-weight: normal;
 }
-
 footer a:hover {
   text-shadow: 0 0 10px rgba(138, 180, 255, 0.5);
 }
