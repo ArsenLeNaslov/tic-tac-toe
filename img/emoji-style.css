@@ -1,0 +1,9 @@
+/* Emoji Styles - Game Status Indicators' positioning and sizing */
+.emoji {
+    width: 0.9em;
+    height: 0.9em;
+    vertical-align: middle;
+    margin: 0 0.1em;
+    display: inline-block;
+    object-fit: contain;
+}
