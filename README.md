@@ -10,11 +10,11 @@ Live preview: [Odin's Tic Tac Toe](https://arsenlenaslov.github.io/tic-tac-toe/)
 ## Features
 
 ### Game Modes
-https://arsenlenaslov.github.io/tic-tac-toe/- **Two Players (PvP)** : Play locally against another person on the same device
+- **Two Players (PvP)** : Play locally against another person on the same device
 - **Play vs Computer (PvC)** : Challenge an AI ohttps://arsenlenaslov.github.io/tic-tac-toe/pponent with three difficulty levels:
-  - **Easy** : Random moves (unpredictable but beatable)
-  - **Intermediate** : Smart move selection with 30% random moves (balanced challenge)
-  - **Hard** : Minimax algorithm for optimal play (unbeatable)
+- **Easy** : Random moves (unpredictable but beatable)
+- **Intermediate** : Smart move selection with 30% random moves (balanced challenge)
+- **Hard** : Minimax algorithm for optimal play (unbeatable)
 
 ### Game Management
 - **Live Scoreboard** : Tracks wins for Player X, Player O, and draws across multiple games
